@@ -4,7 +4,6 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>ZigBeeNet Contributors</Authors>
-    <Version>1.0.0-alpha1</Version>
     <Company>ZigBeeNet</Company>
     <Description>ZigBeeNet is a implementation of the Zigbee 3.0 Cluster Library for .NET Standard, .NET Core and more .NET platforms.
 
@@ -20,6 +19,10 @@ This package contains a SerialPort implementation for connecting, reading and se
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="GitVersionTask" Version="4.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="System.IO.Ports" Version="4.5.0" />
   </ItemGroup>
 

@@ -3,7 +3,6 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.0-alpha1</Version>
     <Authors>ZigBeeNet Contributors</Authors>
     <Company>ZigBeeNet</Company>
     <PackageLicenseExpression>EPL-1.0</PackageLicenseExpression>
@@ -18,6 +17,13 @@ With ZigBeeNet you can develop your own .NET application which communicates with
 
 This package can be used in combination with the ZigBeeNet package and is the dongle implementation for a Texas Instrument CC2531 hardware dongle</Description>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GitVersionTask" Version="4.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ZigBeeNet\ZigBeeNet.csproj" />
