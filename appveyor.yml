@@ -3,7 +3,7 @@ image:
   - Visual Studio 2019
   - Ubuntu1804
 install:
-  - choco install gitversion.portable -pre -y
+  - choco install gitversion.portable -y
 assembly_info:
   patch: false
 before_build:
