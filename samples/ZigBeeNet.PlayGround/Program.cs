@@ -53,6 +53,7 @@ namespace ZigBeeNet.PlayGround
                     showHelp = true;
                 }
 
+                Console.WriteLine("[ ZigBeeNet ]");
                 Console.Write("Enter COM Port: ");
 
                 string port = Console.ReadLine();
